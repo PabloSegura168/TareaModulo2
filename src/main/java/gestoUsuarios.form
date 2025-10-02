@@ -34,44 +34,45 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="da8eb" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="da8eb" class="javax.swing.JButton" binding="Dashboard">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="Dashboard"/>
             </properties>
           </component>
-          <component id="41f02" class="javax.swing.JButton" binding="button2" default-binding="true">
+          <component id="41f02" class="javax.swing.JButton" binding="usuariosButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="Usuarios"/>
             </properties>
           </component>
-          <component id="148f6" class="javax.swing.JButton" binding="button3" default-binding="true">
+          <component id="148f6" class="javax.swing.JButton" binding="informesButton" default-binding="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="Informes"/>
             </properties>
           </component>
-          <component id="a1550" class="javax.swing.JButton" binding="button4" default-binding="true">
+          <component id="a1550" class="javax.swing.JButton" binding="Ajustesbutton">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <label value="Ajustes"/>
+              <text value="Ajustes"/>
             </properties>
           </component>
-          <component id="7ca40" class="javax.swing.JButton" binding="button5" default-binding="true">
+          <component id="7ca40" class="javax.swing.JButton" binding="ayudaButton" default-binding="true">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="Ayuda"/>
             </properties>
           </component>
           <hspacer id="f8568">
@@ -86,16 +87,17 @@
         <properties/>
         <border type="none"/>
         <children>
-          <tabbedpane id="30d56" binding="tabbedPane1" default-binding="true">
+          <tabbedpane id="30d56" binding="Jtabbed">
             <constraints border-constraint="Center"/>
             <properties>
+              <name value="Resumen"/>
               <preferredSize width="260" height="95"/>
             </properties>
             <border type="none"/>
             <children>
-              <grid id="88586" layout-manager="BorderLayout" hgap="0" vgap="0">
+              <grid id="88586" binding="Resumen" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
-                  <tabbedpane title="Untitled"/>
+                  <tabbedpane title="Resumen"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
@@ -115,13 +117,18 @@
                   </scrollpane>
                 </children>
               </grid>
-              <grid id="cde5a" layout-manager="BorderLayout" hgap="0" vgap="0">
+              <grid id="cde5a" binding="Logs" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
-                  <tabbedpane title="Untitled"/>
+                  <tabbedpane title="Logs"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
-                <children/>
+                <children>
+                  <component id="715b0" class="javax.swing.JList" binding="list1" default-binding="true">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                  </component>
+                </children>
               </grid>
             </children>
           </tabbedpane>
@@ -132,22 +139,22 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="228fa" class="javax.swing.JButton" binding="button6" default-binding="true">
+          <component id="228fa" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Cancelar"/>
             </properties>
           </component>
-          <component id="994e2" class="javax.swing.JButton" binding="button7" default-binding="true">
+          <component id="994e2" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Limpiar"/>
             </properties>
           </component>
-          <component id="fbb5" class="javax.swing.JButton" binding="button8" default-binding="true">
+          <component id="fbb5" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Guardar"/>
             </properties>
           </component>
         </children>
@@ -267,7 +274,7 @@
           <scrollpane id="21296">
             <constraints>
               <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
             </constraints>
             <properties/>
             <border type="none"/>

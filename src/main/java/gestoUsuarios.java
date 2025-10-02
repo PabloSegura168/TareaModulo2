@@ -12,18 +12,18 @@ public class gestoUsuarios {
 
     private JPanel panel1;
     private JLabel logo;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
+    private JButton Dashboard;
+    private JButton usuariosButton;
+    private JButton informesButton;
+    private JButton Ajustesbutton;
+    private JButton ayudaButton;
     private JTextField nombreEntrada;
     private JTextField textField2;
-    private JTabbedPane tabbedPane1;
+    private JTabbedPane Jtabbed;
     private JTextArea textArea1;
-    private JButton button6;
-    private JButton button7;
-    private JButton button8;
+    private JButton cancelarButton;
+    private JButton limpiarButton;
+    private JButton guardarButton;
     private JPanel Navegacion;
     private JPanel Header;
     private JPanel Botonera;
@@ -37,4 +37,7 @@ public class gestoUsuarios {
     private JLabel rolEntrada;
     private JCheckBox checkBox1;
     private JLabel Activo;
+    private JPanel Resumen;
+    private JPanel Logs;
+    private JList list1;
 }
